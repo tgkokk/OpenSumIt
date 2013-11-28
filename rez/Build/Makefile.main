@@ -166,8 +166,6 @@ $(OBJDIR)/%.o: %.cpp
 	@ echo "-> "$(@F)
 	@ $(CC) -c $< -o $@ $(INCLUDES) $(CFLAGS)
 
-include $(OBJS:%.o=%.d)
-
 $(OBJDIR)/%.d:%.cpp
 	@ test -d $(OBJDIR) || mkdir $(OBJDIR)
 	@ echo "-> "$(@F)

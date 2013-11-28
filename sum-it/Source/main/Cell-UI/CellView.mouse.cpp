@@ -347,7 +347,7 @@ CCellView::SelectRow(BPoint where, int rowNr)
 
 				if (r.top != r.bottom)
 				{
-					sprintf(s, "%d", x);
+					sprintf(s, "%ld", x);
 					FillRect3D(this, r, x >= fSelection.top && x <= fSelection.bottom, true, s);
 				}
 			}

@@ -314,7 +314,7 @@ resheader		:	RES NUMBER '(' NUMBER ',' strconst ')'
 																	rez_error("Undefined resource type: %4.4s", &t);
 																}
 																head = NULL;
-																$$ = (int)new ResHeader((int)$2, (int)$4, (int)NULL);
+																$$ = (int)new ResHeader((int)$2, (int)$4, 0);
 															}
 				;
 

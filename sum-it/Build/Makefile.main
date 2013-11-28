@@ -141,8 +141,6 @@ $(DEP_DIR)/%_bsl.d: %.bsl
 	$(ECHO_TGT)
 	$(MAKE_DEPEND_BSL) -o $(OBJ_DIR)/$(basename $(<F)).rsrc $< -dep $@
 
-include $(DEPS) $(RSRC_DEPS)
-
 Build/Makefile.rules Build/Makefile.defs :
 	@ printf "Recreating include files\\n"
 	$(MAKE_MAKE)
